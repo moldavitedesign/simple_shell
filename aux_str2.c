@@ -95,9 +95,9 @@ char *string_tokenizer(char *str, const char *delim)
 			if (*splitted && *(splitted - 1) == '\0')
 				break;
 		/* Replace delimiter for null char */
-for (i = 0; delim[i] != '\0'; i++)i
-{	
-	if  (*splitted == delim[i])
+		for (i = 0; delim[i] != '\0'; i++)
+{
+			if  (*splitted == delim[i])
 			{
 				*splitted = '\0';
 				if (splitted == str_start)
